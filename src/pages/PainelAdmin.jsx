@@ -24,17 +24,11 @@ function PlanoCard() {
   return (
     <div style={{ background: 'var(--brand)', borderRadius: 'var(--r)', padding: 16, color: '#fff' }}>
       <div style={{ fontSize: 12, fontWeight: 600, opacity: .7, textTransform: 'uppercase', letterSpacing: '.06em' }}>Plano atual</div>
-      <div style={{ fontSize: 20, fontWeight: 600, marginTop: 2 }}>Pro ⭐</div>
-      <div style={{ fontSize: 12, opacity: .7, marginTop: 4 }}>Todos os recursos desbloqueados</div>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 14, paddingTop: 14, borderTop: '1px solid rgba(255,255,255,.2)' }}>
-        <div>
-          <div style={{ fontSize: 22, fontWeight: 600, fontFamily: 'DM Mono, monospace' }}>12</div>
-          <div style={{ fontSize: 11, opacity: .65 }}>aparelhos ativos</div>
-        </div>
-        <div style={{ textAlign: 'right' }}>
-          <div style={{ fontSize: 18, fontWeight: 600, fontFamily: 'DM Mono, monospace' }}>R$180/mês</div>
-          <div style={{ fontSize: 11, opacity: .65 }}>R$15/aparelho</div>
-        </div>
+      <div style={{ fontSize: 20, fontWeight: 600, marginTop: 2 }}>R$ 50/mês</div>
+      <div style={{ fontSize: 12, opacity: .9, marginTop: 4 }}>Todos os recursos inclusos</div>
+      <div style={{ marginTop: 14, paddingTop: 14, borderTop: '1px solid rgba(255,255,255,.2)' }}>
+        <div style={{ fontSize: 13, opacity: .95, marginBottom: 6 }}>Incluído: <strong>2 pontos de acesso</strong> (1 supervisor + 1 vendedor)</div>
+        <div style={{ fontSize: 12, opacity: .8 }}>Cada aparelho adicional: <strong>R$ 20/mês</strong></div>
       </div>
     </div>
   )
@@ -67,7 +61,7 @@ function Usuarios() {
   return (
     <>
       <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-        <button style={{ padding: '8px 14px', background: 'var(--brand)', color: '#fff', border: 'none', borderRadius: 'var(--r-sm)', fontSize: 12, fontWeight: 600, cursor: 'pointer', fontFamily: 'DM Sans, sans-serif' }}>
+        <button style={{ padding: '8px 14px', background: 'var(--brand)', color: '#fff', border: 'none', borderRadius: 'var(--r)', fontSize: 12, fontWeight: 600, cursor: 'pointer', fontFamily: 'DM Sans, sans-serif' }}>
           + Convidar usuário
         </button>
       </div>
@@ -110,7 +104,7 @@ function Config() {
         </div>
       </div>
       <div className="card">
-        <div className="card-hd">Aprovação de pedidos (Pro)</div>
+        <div className="card-hd">Aprovação de pedidos</div>
         <div className="cfg-row">
           <span className="cfg-lbl">Exigir aprovação</span>
           <Toggle on={aprovacao} onChange={setAprovacao} />
@@ -134,9 +128,8 @@ function Plano({ logout, navigate }) {
         <div className="card-hd">Cobrança</div>
         <div className="cfg-row"><span className="cfg-lbl">Forma de pagamento</span><span className="cfg-val">Cartão ···4521 ›</span></div>
         <div className="cfg-row"><span className="cfg-lbl">Notas fiscais</span><span className="cfg-val">›</span></div>
-        <div className="cfg-row"><span className="cfg-lbl">Adicionar aparelhos</span><span className="cfg-val">›</span></div>
+        <div className="cfg-row"><span className="cfg-lbl">Adicionar aparelhos</span><span className="cfg-val">R$ 20/mês por aparelho ›</span></div>
       </div>
-      <button className="btn-ghost" style={{ marginTop: 4 }}>Fazer downgrade para básico</button>
       <button className="btn-ghost" onClick={() => { logout(); navigate('/login') }}>Sair da conta</button>
     </>
   )

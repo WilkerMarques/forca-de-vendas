@@ -9,7 +9,7 @@ export function Avatar({ initials, bg = '#E1F5EE', color = '#085041', size = 36 
 
 // ── Badge de perfil ──────────────────────────────────────────────────────────
 export function PerfilBadge({ perfil }) {
-  const map = { vendedor: ['badge-v', 'Vendedor'], gestor: ['badge-g', 'Gestor'], admin: ['badge-a', 'Admin'] }
+  const map = { vendedor: ['badge-v', 'Vendedor'], supervisor: ['badge-s', 'Supervisor'] }
   const [cls, label] = map[perfil] || ['badge-v', perfil]
   return <span className={`badge ${cls}`} style={{ fontSize: 10, padding: '3px 9px' }}>{label}</span>
 }
@@ -34,9 +34,8 @@ export function StatusBadge({ status }) {
 // ── Topbar genérica ──────────────────────────────────────────────────────────
 export function Topbar({ user, onBack, title }) {
   const avatarColors = {
-    vendedor: { bg: '#E8F3FA', color: '#0D5C8C' },
-    gestor:   { bg: '#E1F5EE', color: '#085041' },
-    admin:    { bg: '#FAEEDA', color: '#633806' },
+    vendedor:   { bg: '#E8F3FA', color: '#0D5C8C' },
+    supervisor: { bg: '#E1F5EE', color: '#085041' },
   }
   const ac = avatarColors[user?.perfil] || avatarColors.vendedor
 
@@ -79,7 +78,7 @@ export function BottomNav({ items, active, onChange, className = '' }) {
 export function Sidebar({ items, active, onChange, fabLabel, onFabClick }) {
   return (
     <aside className="sidebar">
-      <div className="sidebar-brand">VendasPro</div>
+      <div className="sidebar-brand">Força de Vendas</div>
       <nav className="sidebar-nav">
         {items.map(item => (
           <button

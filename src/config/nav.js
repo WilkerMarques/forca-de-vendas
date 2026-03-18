@@ -23,3 +23,11 @@ export const NAV_ADMIN = [
   { id: 'config', icon: '⚙️', label: 'Config' },
   { id: 'plano', icon: '💳', label: 'Plano' },
 ]
+
+/** Navegação do perfil Supervisor (Gestor + Admin unificados) */
+export const NAV_SUPERVISOR = [
+  { id: 'dashboard', icon: '📊', label: 'Dashboard' },
+  { id: 'usuarios', icon: '👥', label: 'Usuários' },
+  { id: 'config', icon: '⚙️', label: 'Config' },
+  { id: 'perfil', icon: '👤', label: 'Perfil' },
+]

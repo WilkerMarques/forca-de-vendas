@@ -3,9 +3,8 @@ import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
 
 const PERFIS = [
-  { id: 'vendedor', icon: '👤', label: 'Vendedor' },
-  { id: 'gestor',   icon: '📊', label: 'Gestor' },
-  { id: 'admin',    icon: '⚙️',  label: 'Admin' },
+  { id: 'vendedor',   icon: '👤', label: 'Vendedor' },
+  { id: 'supervisor', icon: '📊', label: 'Supervisor' },
 ]
 
 export default function Login() {
@@ -29,10 +28,14 @@ export default function Login() {
       <div className="login-card">
         {/* Hero */}
         <div className="login-hero">
-          <div className="login-hero-deco" aria-hidden />
+          <div className="login-hero-logo-mark" aria-hidden>
+            <img src="/logo.png" alt="" className="login-hero-logo-mark-img" />
+          </div>
           <div className="login-hero-head">
-            <div className="login-logo">⊙</div>
-            <span className="login-brand">VendasPro</span>
+            <div className="login-logo">
+              <img src="/logo.png" alt="" className="login-logo-img" />
+            </div>
+            <span className="login-brand">Força de Vendas</span>
           </div>
           <h1 className="login-title">Bem-vindo de volta</h1>
           <p className="login-sub">Acesse sua conta para continuar</p>
@@ -70,7 +73,7 @@ export default function Login() {
           </form>
 
           <p className="login-hint">
-            No sistema real, o perfil é definido pelo admin.<br />Não existe seleção de perfil na tela de login.
+            No sistema real, o perfil é definido pelo supervisor.<br />Não existe seleção de perfil na tela de login.
           </p>
         </div>
       </div>

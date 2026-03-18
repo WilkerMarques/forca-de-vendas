@@ -4,9 +4,8 @@ const AuthContext = createContext(null)
 
 // Usuários de demonstração — substituir por chamada de API real
 const DEMO_USERS = {
-  vendedor: { id: 1, nome: 'João Silva', email: 'joao@distribuidora.com.br', perfil: 'vendedor', initials: 'JS', empresa: 'Distribuidora Silva' },
-  gestor:   { id: 2, nome: 'Maria Gestora', email: 'maria@distribuidora.com.br', perfil: 'gestor', initials: 'MG', empresa: 'Distribuidora Silva' },
-  admin:    { id: 3, nome: 'Carlos Admin', email: 'carlos@distribuidora.com.br', perfil: 'admin', initials: 'CA', empresa: 'Distribuidora Silva' },
+  vendedor:   { id: 1, nome: 'João Silva', email: 'joao@distribuidora.com.br', perfil: 'vendedor', initials: 'JS', empresa: 'Distribuidora Silva' },
+  supervisor: { id: 2, nome: 'Maria Silva', email: 'maria@distribuidora.com.br', perfil: 'supervisor', initials: 'MS', empresa: 'Distribuidora Silva' },
 }
 
 export function AuthProvider({ children }) {

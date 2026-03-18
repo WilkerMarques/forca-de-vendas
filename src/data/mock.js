@@ -32,11 +32,10 @@ export const VENDEDORES = [
 ]
 
 export const USUARIOS = [
-  { initials: 'JS', nome: 'João Silva',    email: 'joao@distribuidora.com.br',    perfil: 'vendedor', bg: '#E1F5EE', color: '#085041' },
-  { initials: 'MC', nome: 'Maria Costa',   email: 'maria.c@distribuidora.com.br', perfil: 'vendedor', bg: '#E1F5EE', color: '#085041' },
-  { initials: 'AR', nome: 'André Ramos',   email: 'andre@distribuidora.com.br',   perfil: 'vendedor', bg: '#E1F5EE', color: '#085041' },
-  { initials: 'MG', nome: 'Maria Gestora', email: 'maria.g@distribuidora.com.br', perfil: 'gestor',   bg: '#E1F5EE', color: '#085041' },
-  { initials: 'CA', nome: 'Carlos Admin',  email: 'carlos@distribuidora.com.br',  perfil: 'admin',    bg: '#FAEEDA', color: '#633806' },
+  { initials: 'JS', nome: 'João Silva',   email: 'joao@distribuidora.com.br',    perfil: 'vendedor',   bg: '#E1F5EE', color: '#085041' },
+  { initials: 'MC', nome: 'Maria Costa',  email: 'maria.c@distribuidora.com.br', perfil: 'vendedor',   bg: '#E1F5EE', color: '#085041' },
+  { initials: 'AR', nome: 'André Ramos',  email: 'andre@distribuidora.com.br',   perfil: 'vendedor',   bg: '#E1F5EE', color: '#085041' },
+  { initials: 'MS', nome: 'Maria Silva',  email: 'maria@distribuidora.com.br',   perfil: 'supervisor', bg: '#E1F5EE', color: '#085041' },
 ]
 
 export const PEDIDOS_APROVACAO = [
