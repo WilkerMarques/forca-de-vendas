@@ -140,13 +140,13 @@ body {
 }
 .login-logo {
   width: 36px;
-  height: 34px;
-  border-radius: 12px;
+  height: 36px;
+  border-radius: 8px;
   background: rgba(255, 255, 255, 0.87);
   display: grid;
   place-items: center;
 
-  padding: 0px; /* espaço interno igual em todos os lados */
+  padding: 4px; /* mais borda branca em volta da logo */
   box-sizing: border-box;
   overflow: hidden;
 }
